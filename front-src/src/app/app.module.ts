@@ -7,6 +7,7 @@ import { RouterModule , Routes , Router } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 import { SidebarModule } from './sidebar/sidebar.module';
+import { NavbarModule } from './navbar/navbar.module';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MapComponent } from './map/map.component';
@@ -19,6 +20,7 @@ import { MapComponent } from './map/map.component';
     MapComponent
   ],
   imports: [
+    NavbarModule,
     SidebarModule,
     BrowserModule,
     FormsModule,
